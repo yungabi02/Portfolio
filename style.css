@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ec2225;
+  padding: 10px;
+}
+nav ul {
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: left; /* Centrar los elementos */
+}
+nav ul li {
+  margin: 0 15px; /* Espaciado entre los enlaces */
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #f00;
+}
+body{
+    margin-top: 50px;
+    width: 100%;
+    background-image: url('img/espai.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.NOM{
+  margin-left: 10px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #f6d8d5;
+  font-size: 80px;
+}
+h2{
+    margin-left: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #ff1500;
+    font-size: 60px;
+}
+p{
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.NOM:hover{
+  opacity: 0.9;
+  text-shadow: 0px -5px #ec2225, 0px 5px #00c2cb, -5px 0px #ec2225, 5px 0px #00c2cb;
+}
+.NOM::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e0ffff;
+  z-index: 0;
+}
+.NOM:hover::before{
+  animation: animate 1s ease-in-out infinite;
+  z-index: 0;
+}
+@keyframes animate{
+  0%, 100%{
+    top: -7px;
+    left: 0;
+    opacity: 1;
+  }
+  20%{
+    top: 0;
+    left: -10px;
+    opacity: 0.7;
+  }
+  40%{
+    top: 7px;
+    left: 0;
+    opacity: 0.2;
+  }
+  60%{
+    top: 0;
+    left: 10px;
+    opacity: 0.3;
+  }
+  80%{
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+  }
+}
+#imgprofile{
+  width: 70%;
+  margin-right: 50px;
+  border: solid 3px #f6d8d5 !important;
+  border-radius: 32px !important;
+
+}
+
+.footer {
+  background-color: #000; /* Fondo negro para destacar los íconos */
+  padding: 20px 0;
+}
+
+.social-icons {
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centra los iconos */
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: white; /* Color blanco para los íconos */
+  font-size: 24px; /* Tamaño de los íconos */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Cambia a un gris claro al pasar el ratón por encima */
+  transform: scale(1.1); /* Aumenta la imagen en un 10% */
+
+}
+
+.languages{
+  border-bottom: #ffffff 2px solid;
+}
+
+.languagestxt{
+  text-align: center;
+  color: white;
+}
+
+.imglang{
+  width: 100%;
+}
+
+.imglang:hover{
+  transform: scale(1.1); /* Aumenta la imagen en un 10% */
+}
+
+.bl{
+  color: white;
+}
+
+h3{
+  color: rgba(211, 211, 211, 0.637);
+}
